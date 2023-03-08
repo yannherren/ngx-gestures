@@ -1,24 +1,35 @@
-# NgxGesture
+# @herrenio/ngx-gestures
+**DEMO:** coming soon
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+This gesture library provides  a lightweight and flexible solution for incorporating a range of gestures into Angular applications. With customizable interactions, this library can enhance the usability and accessibility of your Angular app.
 
-## Code scaffolding
+## Installation
+```
+npm install @herrenio/ngx-gestures
+```
 
-Run `ng generate component component-name --project ngx-gesture` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-gesture`.
-> Note: Don't forget to add `--project ngx-gesture` or else it will be added to the default project in your `angular.json` file. 
+## Usage
+Import the gesture module using
+```javascript
+import {NgxGestureModule} from '@herrenio/ngx-gestures';
+```
 
-## Build
+### Tap gestures
+Use the directive as follows
+```angular2html
+<div
+  ngxTapGesture
+  (tapCountReached)="tapCountReached()"
+  [tapCount]="2"
+  [maxTapIntervalMs]="200"
+>
+</div>
+```
 
-Run `ng build ngx-gesture` to build the project. The build artifacts will be stored in the `dist/` directory.
+Following properties are available
 
-## Publishing
+| Name             | Default | Description                                                                              |  
+|------------------|---------|------------------------------------------------------------------------------------------|
+| tapCount         | 2       | How many times has to be clicked/tapped until `tapCountReached` gets fired               |
+| maxTapIntervalMs | 200     | How much time (ms) is allowed between taps before the current tap interval gets canceled |
 
-After building your library with `ng build ngx-gesture`, go to the dist folder `cd dist/ngx-gesture` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-gesture` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
