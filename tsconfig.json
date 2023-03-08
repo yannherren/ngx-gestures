@@ -2,6 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@herrenio/ngx-gesture": [
+        "dist/herrenio/ngx-gesture"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

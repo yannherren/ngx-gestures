@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {NgxGestureModule} from "../../projects/herrenio/ngx-gesture/src/lib/ngx-gesture.module";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxGestureModule
   ],
   providers: [],
   bootstrap: [AppComponent]
