@@ -1,7 +1,7 @@
 # @herrenio/ngx-gestures
 **DEMO:** coming soon
 
-This gesture library provides  a lightweight and flexible solution for incorporating a range of gestures into Angular applications. With customizable interactions, this library can enhance the usability and accessibility of your Angular app.
+This gesture library provides a lightweight and flexible solution for incorporating a range of gestures into Angular applications. With customizable interactions, this library can enhance the usability and accessibility of your Angular app.
 
 ## Installation
 ```
